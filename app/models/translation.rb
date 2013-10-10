@@ -4,7 +4,6 @@ class Translation < ActiveRecord::Base
 
   def reload
     I18n.backend.reload!
-    ActiveAdmin.reload! if defined?(::ActiveAdmin)
   end
 
 end

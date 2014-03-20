@@ -27,7 +27,8 @@ ActiveAdmin.register Translation do
       f.input :value, as: :html_editor
     end
 
-    f.buttons
+    #f.buttons seems deprecated
+    f.actions
   end
 
   controller do
